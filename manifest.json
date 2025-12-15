@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "No YouTube AI Summary",
-  "version": "2.1",
+  "version": "3.0",
   "browser_specific_settings": {
     "gecko": {
       "id": "no-youtube-ai-summary@teleported-cat",

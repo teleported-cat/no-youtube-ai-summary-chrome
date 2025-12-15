@@ -31,6 +31,7 @@ function waitForElements(selector, callback) {
 /* 
  * Execution starts here 
  */
+console.log("[No YouTube AI Summary] Loaded!");
 
 waitForElements('#expandable-metadata', (elements) => {
     elements.forEach(el => {
@@ -39,6 +40,16 @@ waitForElements('#expandable-metadata', (elements) => {
     // Fair Warning: This console.log will rapidly fill your console every time the DOM is updated!
     // console.log(`[No YouTube AI Summary] Summary Blocked!`);
 })
+
+// For the descriptions in m.youtube.com/watch (they use a class instead)
+waitForElements('.expandableMetadataRendererHost', (elements) => {
+    elements.forEach(el => {
+        el.style.display = "none";
+    });
+    // Fair Warning: This console.log will rapidly fill your console every time the DOM is updated!
+    // console.log(`[No YouTube AI Summary] Summary Blocked!`);
+})
+
 
 /**
  * @callback elementCallback
