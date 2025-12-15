@@ -22,7 +22,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/watch*","*://*.youtube.com/results*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["noYoutubeAiSummary.js"]
     }
   ]
